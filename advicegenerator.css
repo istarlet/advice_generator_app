@@ -12,10 +12,23 @@
     margin: 0;
 }
 
-
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
 /* Font / Text */
 .manrope {
     font-family: 'Manrope', sans-serif;
+}
+
+.fw-800 {
+    font-weight: 800;
+}
+
+.fs-22 {
+    font-size: 22px;
 }
 
 .fs-28 {
