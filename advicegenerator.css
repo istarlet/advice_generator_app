@@ -89,3 +89,6 @@ i {
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
+
+
+const reloadButton = document.querySelector("button#reload")
