@@ -1,33 +1,21 @@
-const apiUrl = "https://api.adviceslip.com/advice";
-const reloadButton = document.querySelector("button#diceBtn");
 let adviceArea = document.querySelector("#adviceArea");
-let adviceNum = document.querySelector("#adviceNum");
+let adviceNumber = document.querySelector("#adviceNumber");
+let diceBtn = document.querySelector("#diceBtn");
 
-fetch(apiUrl)
-.then(
-    (resp) => {
-        return resp.json()
-    }
-).then((data) => {
-    adviceArea.innerHTML = data.slip.advice;
-    adviceNum.innerHTML = data.slip.id;
-});
+const url = "https://api.adviceslip.com/advice";
 
 
-reloadButton.addEventListener("click", ()=> getNewAdvice())
 
-function getNewAdvice(){
-    fetch(apiUrl)
-.then(
-    (resp) => {
-        return resp.json()
-    }
-).then((data) => {
-    console.log(data.slip.advice)
-    adviceArea.innerHTML = data.slip.advice;
 
-    console.log(data.slip.id)
-    adviceNum.innerHTML = data.slip.id;
-});
+function adviceGenerator() {
+fetch(url)
+    .then(res => res.json())
+    .then(data => {
+        adviceNumber.textContent = `Advice #${data.slip.id}`;
+        adviceArea.textContent = `"${data.slip.advice}"`;
+    })
 }
+
+diceBtn.addEventListener("click", adviceGenerator);
+adviceGenerator();
 

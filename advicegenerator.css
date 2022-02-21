@@ -40,6 +40,8 @@ img {
     margin-left: 1em;
     margin-right: 1em;
     border-radius: 10px;
+    height: 50vh;
+    width: 60vh;
 }
 
 .neon-green {
