@@ -40,8 +40,9 @@ img {
     margin-left: 1em;
     margin-right: 1em;
     border-radius: 10px;
-    height: 50vh;
+    height: 30vh;
     width: 60vh;
+    text-align: center;
 }
 
 .neon-green {
@@ -53,11 +54,17 @@ img {
 }
 
 i {
+    size: 64px;
+}
+
+
+.btn {
     border-radius: 100px;
     padding: .75em;
     background-color:hsl(150, 100%, 66%);
+    border-color: transparent;
+    transform: translateY(135%);
 }
-
 
 
 /* Font / Text */
@@ -74,6 +81,10 @@ i {
 }
 
 .fs-28 {
+    font-size: 28px;
+}
+
+.fs-32 {
     font-size: 28px;
 }
 
