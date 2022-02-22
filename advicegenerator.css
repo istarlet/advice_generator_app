@@ -5,10 +5,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
 
 :root {
-    --neon-green: hsl(150, 100%, 66%);
-    --light-cyan: hsl(193, 38%, 86%);
-    --grayish-blue: hsl(218, 33%, 29%);
-    --dark-grayish-blue: hsl(220, 36%, 20%);
+    --neon-green: hsla(150, 100%, 66%, 1);
+    --light-cyan: hsla(193, 38%, 86%, 1);
+    --grayish-blue: hsla(217, 19%, 38%, 1);
+    --dark-grayish-blue: hsla(219, 22%, 16%, 1);
 }
 
 *,
@@ -20,7 +20,7 @@
 }
 
 body {
-    background-color: hsl(220, 36%, 20%);
+    background-color: hsla(219, 22%, 16%, 1);
 }
 
 img {
@@ -32,10 +32,11 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .advice__container {
-    background-color: hsl(218, 33%, 29%);
+    background-color: hsla(217, 19%, 38%, 1);
     padding: 3em;
     margin-left: 1em;
     margin-right: 1em;
@@ -46,11 +47,11 @@ img {
 }
 
 .neon-green {
-    color: hsl(150, 100%, 66%);
+    color: hsla(150, 100%, 66%, 1);
 }
 
 .light-cyan {
-    color: hsl(193, 38%, 86%);
+    color: hsla(193, 38%, 86%, 1);
 }
 
 i {
@@ -66,8 +67,9 @@ i {
     font-weight: 800;
 }
 
-.fs-22 {
-    font-size: 22px;
+.fs-13 {
+    font-size: 13px;
+    letter-spacing: 4.09px;
 }
 
 .fs-28 {
@@ -78,25 +80,30 @@ i {
     font-size: 28px;
 }
 
-.center {
-    text-align: center;
-}
-
 .uppercase {
     text-transform: uppercase;
 }
 
 /* Font / Text End */
 
+/* Picture / Img Styles */
+
+picture .img {
+    margin-top: 1em;
+}
+
 /* Button Styles */
 
 .btn {
     border-radius: 100px;
     padding: 0.75em;
-    background-color: hsl(150, 100%, 66%);
+    background-color: hsla(150, 100%, 66%, 1);
     border-color: transparent;
     transform: translateY(50%);
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
   
 .btn::before {
@@ -107,7 +114,7 @@ i {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background: hsl(150, 100%, 66%);
+    background: hsla(150, 100%, 66%, 1);
     /*
     transition: .5s;
     */
@@ -117,13 +124,13 @@ i {
   
 .btn:hover::before {
     transform: scale(1.1);
-    box-shadow: 0 0 15px hsl(150, 100%, 66%);
+    box-shadow: 0 0 20px hsla(150, 100%, 66%, 1);
 }
   
 .btn:hover {
-    background: hsl(150, 100%, 66%);
-    box-shadow: 0 0 20px hsl(150, 100%, 66%);
-    text-shadow: 0 0 20px hsl(150, 100%, 66%);
+    background: hsla(150, 100%, 66%, 1);
+    box-shadow: 0 0 20px hsla(150, 100%, 66%, 1);
+    text-shadow: 0 0 20px hsla(150, 100%, 66%, 1);
 }
 
 /* Button Styles End */
