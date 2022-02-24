@@ -74,6 +74,9 @@ i {
 
 .fs-28 {
     font-size: 28px;
+    line-height: 38px;
+    letter-spacing: -0.3px;
+    font-style: normal;
 }
 
 .fs-32 {
@@ -90,20 +93,23 @@ i {
 
 picture .img {
     margin-top: 1em;
+    z-index: 99;
 }
 
 /* Button Styles */
 
 .btn {
     border-radius: 100px;
-    padding: 0.75em;
+    padding: 1.25em;
+    margin-top: 1em;
     background-color: hsla(150, 100%, 66%, 1);
     border-color: transparent;
-    transform: translateY(50%);
+    transform: translateX(-50%);
     cursor: pointer;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-items: center;
+    position: absolute;
+    
 }
   
 .btn::before {
